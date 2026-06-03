@@ -3,8 +3,8 @@ package linkedlists
 import "fmt"
 
 type Node struct {
-	value int
-	next  *Node
+	Value int
+	Next  *Node
 }
 
 type LinkedList struct {
@@ -12,7 +12,7 @@ type LinkedList struct {
 }
 
 func CreateNode(value int) *Node {
-	return &Node{value: value, next: nil}
+	return &Node{Value: value, Next: nil}
 }
 
 func AppendToLinkedList(list *LinkedList, value int) {
@@ -22,10 +22,10 @@ func AppendToLinkedList(list *LinkedList, value int) {
 	} else {
 		last := list.Head
 
-		for last.next != nil {
-			last = last.next
+		for last.Next != nil {
+			last = last.Next
 		}
-		last.next = node
+		last.Next = node
 	}
 }
 
@@ -41,8 +41,8 @@ func PrintLinkedList(name string, linked_list *LinkedList) {
 	fmt.Printf("%s: ", name)
 	last := linked_list.Head
 	for last != nil {
-		fmt.Printf("%d ", last.value)
-		last = last.next
+		fmt.Printf("%d ", last.Value)
+		last = last.Next
 	}
 	fmt.Println("")
 }
