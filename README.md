@@ -1,3 +1,3 @@
 # go_examples
 
-Hobby projects using Golang.
+Common coding exercises using golang. 
