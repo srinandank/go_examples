@@ -1,6 +1,9 @@
 package linkedlists
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 type Node struct {
 	Value int
@@ -45,4 +48,11 @@ func PrintLinkedList(name string, linked_list *LinkedList) {
 		last = last.Next
 	}
 	fmt.Println("")
+}
+
+func SortLinkedList(listOfLinkedLists *[]LinkedList) {
+	cmpfunc := func(a, b LinkedList) int {
+		return a.Head.Value - b.Head.Value
+	}
+	slices.SortFunc(*listOfLinkedLists, cmpfunc)
 }
