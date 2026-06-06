@@ -1,0 +1,1 @@
+Inspired by https://github.com/leetcode-golang-classroom/golang_merge_k_sorted_list/blob/master/sol/solution.go
