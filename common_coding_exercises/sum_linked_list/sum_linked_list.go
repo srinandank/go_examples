@@ -1,6 +1,6 @@
 package main
 
-import linkedlists "github.com/srinandank/go_examples/linked_lists"
+import linkedlists "github.com/srinandank/go_examples/common_coding_exercises/linked_lists"
 
 func sum_linked_list(list1 *linkedlists.LinkedList, list2 *linkedlists.LinkedList) linkedlists.LinkedList {
 	last_first := list1.Head

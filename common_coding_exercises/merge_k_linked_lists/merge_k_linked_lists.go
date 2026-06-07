@@ -4,7 +4,7 @@ import (
 	"container/heap"
 	"fmt"
 
-	linkedlists "github.com/srinandank/go_examples/linked_lists"
+	linkedlists "github.com/srinandank/go_examples/common_coding_exercises/linked_lists"
 )
 
 type NodeHeap []*linkedlists.Node

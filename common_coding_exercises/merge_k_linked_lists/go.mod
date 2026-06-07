@@ -1,4 +1,4 @@
-module github.com/srinandank/go_examples/merge_k_linked_lists
+module github.com/srinandank/go_examples/common_coding_exercises/merge_k_linked_lists
 
 go 1.26.3
 
